@@ -68,8 +68,8 @@ public class Estimator {
 		if (dataX.length == dataY.length) {
 			for (int i = 0; i < dataX.length; i++) {
 				d = new ArrayList();
-				d.add(Integer.parseInt(dataX[i].trim()));
-				d.add(Integer.parseInt(dataY[i].trim()));
+				d.add(Double.parseDouble(dataX[i].trim()));
+				d.add(Double.parseDouble(dataY[i].trim()));
 				data.add(d);	
 			}
 		}

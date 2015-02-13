@@ -117,7 +117,7 @@ public class Calc {
 		double x2 = 0;
 		double y2 = 0;
 		
-		for (ArrayList<Integer> pair : dataSet) {
+		for (ArrayList<Double> pair : dataSet) {
 			xySum += pair.get(0) * pair.get(1);
 			xSum += pair.get(0);			
 			ySum += pair.get(1);
@@ -163,7 +163,7 @@ public class Calc {
 		double xSum = 0;
 		double divisor;
 		
-		for (ArrayList<Integer> pair :  this.dataSet) {
+		for (ArrayList<Double> pair :  this.dataSet) {
 			pairSum += pair.get(0) * pair.get(1);
 			xSum += Math.pow(pair.get(0), 2);
 		}
@@ -181,7 +181,7 @@ public class Calc {
 	public double[] calculateMean(){
 		double media[] = new double[2];
 		
-		for (ArrayList<Integer> pair:  this.dataSet) {
+		for (ArrayList<Double> pair:  this.dataSet) {
 			media[0] += pair.get(0);
 			media[1] += pair.get(1);
 		}
